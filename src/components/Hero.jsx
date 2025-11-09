@@ -9,7 +9,8 @@ function Hero() {
           Hi, I'm <span className={styles.accent}>Taqi Al-den Qattousa</span>.
         </h1>
         <p className={styles.subtitle}>
-          Applied Computing graduate | Web developer specializing in full-stack applications with React, Node.js, and PostgreSQL.
+          Applied Computing graduate | Web developer specializing in full-stack applications with
+          React, Node.js, and PostgreSQL.
         </p>
         <a href="#projects" className={styles.btn}>
           View My Work

@@ -78,9 +78,9 @@
 .accent {
   display: inline-block;
   position: relative;
-  color:white;
-} 
-  
+  color: white;
+}
+
 .accent::after {
   content: '';
   position: absolute;

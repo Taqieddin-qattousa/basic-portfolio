@@ -37,14 +37,15 @@ function About() {
       <div className={`container ${styles.content}`}>
         <h2>About Me</h2>
         <p>
-          Graduated Applied Computing student from Palestine Technical University - Kadoorie (2020 - July 2025) with a solid
-          background in building and deploying full-stack web applications. Comfortable with modern technologies
-          like React, Node.js, and PostgreSQL, with hands-on experience deploying databases and applications with
-          Python through academic coursework, including applications related to AI.
+          Graduated Applied Computing student from Palestine Technical University - Kadoorie (2020 -
+          July 2025) with a solid background in building and deploying full-stack web applications.
+          Comfortable with modern technologies like React, Node.js, and PostgreSQL, with hands-on
+          experience deploying databases and applications with Python through academic coursework,
+          including applications related to AI.
         </p>
         <p>
-          I'm a fast learner, detail-oriented, and enjoy solving technical problems with
-          an interest in contributing to projects that involve cloud solutions and emerging AI technologies.
+          I'm a fast learner, detail-oriented, and enjoy solving technical problems with an interest
+          in contributing to projects that involve cloud solutions and emerging AI technologies.
         </p>
       </div>
     </section>
