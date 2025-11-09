@@ -1,0 +1,69 @@
+.projects {
+  padding: 80px 0;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projects h2 {
+  position: sticky;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 0.8s ease-out;
+  z-index: 100;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 5;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Make last 2 cards center on second row if there are 5 cards */
+.grid .cardReveal:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+.grid .cardReveal:nth-child(5) {
+  grid-column: 2 / 3;
+}
+
+/* Scroll reveal animation for cards */
+.cardReveal {
+  will-change: opacity, transform;
+  position: relative;
+}
+
+/* Fallback for browsers without IntersectionObserver */
+@media (prefers-reduced-motion: reduce) {
+  .cardReveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,79 @@
+/* --- Global Styles & Variables --- */
+:root {
+  --bg-color: #0a0a0f;
+  --bg-secondary: #13131a;
+  --text-color: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --primary-color: #6366f1; /* Indigo accent */
+  --primary-hover: #4f46e5;
+  --secondary-color: #8b5cf6; /* Purple accent */
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --glow: 0 0 20px rgba(99, 102, 241, 0.3);
+  --font-family: 'Inter', system-ui, sans-serif;
+
+  /* Glass morphism */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.12);
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* This is what makes the nav links scroll smoothly */
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background: var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Animated gradient background */
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  animation: gradientShift 15s ease infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(5%, 5%) rotate(120deg);
+  }
+  66% {
+    transform: translate(-5%, 5%) rotate(240deg);
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* We can add a Google Font (like 'Inter') by importing it here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
