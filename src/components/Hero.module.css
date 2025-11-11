@@ -78,7 +78,10 @@
 .accent {
   display: inline-block;
   position: relative;
-  color: white;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .accent::after {

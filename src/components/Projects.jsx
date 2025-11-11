@@ -4,13 +4,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
 import styles from './Projects.module.css';
+import DevQuestLogo from '../assets/ProjectsIcons/DevQuestLogo.svg';
 
 // Enhanced project data with more details for modal
 const projectData = [
   {
     id: 1,
     title: 'DevQuest',
-    icon: '🚀',
+    icon: DevQuestLogo,
+    isImage: true,
     description:
       'Developed a secure, full-stack web application supporting real-time code execution and automated test validation for instant user feedback.',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Azure', 'Stripe'],
@@ -162,6 +164,7 @@ function Projects() {
                   title={project.title}
                   tags={project.tags}
                   icon={project.icon}
+                  isImage={project.isImage}
                   onClick={() => setSelectedProject(project)}
                 />
               </div>

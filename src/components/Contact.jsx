@@ -37,7 +37,7 @@ function Contact() {
       <div className={`container ${styles.content}`}>
         <h2>Get In Touch</h2>
         <p>I'm currently open to new opportunities. Feel free to reach out!</p>
-        <p className={styles.location}>📍 Dair Qadis, Ramallah, Palestine</p>
+        <p className={styles.location}>📍 Ramallah, Palestine</p>
         <div className={styles.links}>
           <a href="mailto:yazansam18l@gmail.com" className={styles.btn}>
             Email Me

@@ -2,11 +2,13 @@ import React from 'react';
 import styles from './ProjectCard.module.css';
 
 // Compact card that opens modal on click
-function ProjectCard({ title, tags, icon, onClick }) {
+function ProjectCard({ title, tags, icon, isImage, onClick }) {
   return (
     <div className={styles.card} onClick={onClick}>
       <div className={styles.iconContainer}>
-        <div className={styles.icon}>{icon || '💼'}</div>
+        <div className={styles.icon}>
+          {isImage ? <img src={icon} alt={title} className={styles.iconImage} /> : icon || '💼'}
+        </div>
       </div>
       <h3>{title}</h3>
       <div className={styles.tags}>
