@@ -4,32 +4,39 @@
   --bg-secondary: #13131a;
   --text-color: #e4e4e7;
   --text-secondary: #a1a1aa;
-  --primary-color: #6366f1; /* Indigo accent */
-  --primary-hover: #4f46e5;
-  --secondary-color: #8b5cf6; /* Purple accent */
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-border: rgba(255, 255, 255, 0.1);
+
+  /* New Green/Earth Palette */
+  --dark-green: #6d8c38;
+  --pakistan-green: #23b018;
+  --slimy-green: #759c00;
+  --earth-yellow: #b6a15e;
+  --tigers-eye: #b86c25;
+
+  /* Primary colors mapped to new palette */
+  --primary-color: #759c00; /* Slimy green as primary */
+  --primary-hover: #6d8c38; /* Dark green on hover */
+  --secondary-color: #23b018; /* Pakistan green as secondary */
+  --accent-gradient: linear-gradient(135deg, #759c00 0%, #23b018 50%, #6d8c38 100%);
+
+  /* Updated with green tones */
+  --card-bg: rgba(117, 156, 0, 0.08);
+  --card-border: rgba(117, 156, 0, 0.15);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --glow: 0 0 20px rgba(99, 102, 241, 0.3);
+  --glow: 0 0 20px rgba(117, 156, 0, 0.3);
   --font-family: 'Inter', system-ui, sans-serif;
 
-  /* Glass morphism */
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.12);
+  /* Glass morphism with green tint */
+  --glass-bg: rgba(117, 156, 0, 0.05);
+  --glass-border: rgba(117, 156, 0, 0.12);
 
-  /* VS Code Syntax Colors - Mixed with existing theme */
-  --vscode-blue: #9cdcfe;
-  --vscode-teal: #4ec9b0;
-  --vscode-purple: #c586c0;
-  --vscode-yellow: #dcdcaa;
-  --vscode-green: #6a9955;
-  --vscode-orange: #ce9178;
-  --vscode-accent: #007acc;
+  /* Accent colors */
+  --accent-yellow: #b6a15e;
+  --accent-orange: #b86c25;
 
-  /* Hybrid gradients combining both palettes */
-  --code-gradient: linear-gradient(135deg, #007acc 0%, #4ec9b0 50%, #c586c0 100%);
-  --syntax-glow: 0 0 20px rgba(78, 201, 176, 0.3);
+  /* Gradients */
+  --earth-gradient: linear-gradient(135deg, #6d8c38 0%, #759c00 50%, #23b018 100%);
+  --warm-gradient: linear-gradient(135deg, #b6a15e 0%, #b86c25 100%);
+  --nature-glow: 0 0 20px rgba(35, 176, 24, 0.3);
 }
 
 /* Basic Reset */
@@ -61,10 +68,10 @@ body::before {
   width: 200%;
   height: 200%;
   background:
-    radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(78, 201, 176, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(197, 134, 192, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 60% 60%, rgba(0, 122, 204, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(117, 156, 0, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(35, 176, 24, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(109, 140, 56, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, rgba(182, 161, 94, 0.08) 0%, transparent 50%);
   animation: gradientShift 15s ease infinite;
   z-index: -1;
   pointer-events: none;

@@ -1,0 +1,63 @@
+.card {
+  background: linear-gradient(135deg, rgba(117, 156, 0, 0.1) 0%, rgba(35, 176, 24, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(117, 156, 0, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(117, 156, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(117, 156, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.socialGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  background: rgba(117, 156, 0, 0.1);
+  border: 2px solid rgba(117, 156, 0, 0.2);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+}
+
+.socialLink:hover {
+  background: rgba(117, 156, 0, 0.2);
+  border-color: var(--slimy-green);
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+}

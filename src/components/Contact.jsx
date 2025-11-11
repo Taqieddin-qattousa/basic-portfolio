@@ -1,41 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styles from './Contact.module.css';
 
 function Contact() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
-          }
-        });
-      },
-      {
-        threshold: 0.2,
-        rootMargin: '0px',
-      }
-    );
-
-    if (section) {
-      observer.observe(section);
-    }
-
-    return () => {
-      if (section) {
-        observer.unobserve(section);
-      }
-    };
-  }, []);
-
   return (
-    <section id="contact" className={styles.contact} ref={sectionRef}>
+    <div className={styles.contactCard}>
       <div className={`container ${styles.content}`}>
-        <h2>Get In Touch</h2>
         <p>I'm currently open to new opportunities. Feel free to reach out!</p>
         <p className={styles.location}>📍 Ramallah, Palestine</p>
         <div className={styles.links}>
@@ -61,7 +30,7 @@ function Contact() {
         </div>
         <p className={styles.phone}>📞 +970593062910</p>
       </div>
-    </section>
+    </div>
   );
 }
 

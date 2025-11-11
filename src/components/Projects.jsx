@@ -117,6 +117,7 @@ function Projects() {
         end: '+=200%',
         scrub: 1,
         pin: true,
+        pinSpacing: true, // This ensures proper spacing after pin
         anticipatePin: 1,
       },
     });

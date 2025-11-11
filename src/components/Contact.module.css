@@ -1,37 +1,37 @@
-.contact {
-  background: transparent;
-  padding: 80px 0;
+.contactCard {
+  background: linear-gradient(135deg, rgba(117, 156, 0, 0.1) 0%, rgba(35, 176, 24, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(117, 156, 0, 0.2);
+  border-radius: 12px;
+  padding: 3rem 2rem;
   text-align: center;
-  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  border-color: rgba(117, 156, 0, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(117, 156, 0, 0.2);
 }
 
 .content {
-  opacity: 0;
-  transform: translateY(50px) scale(0.95);
-  transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
-}
-
-.contact.visible .content {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
-.contact h2 {
+.contactCard h2 {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
 }
 
-.contact p {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
+.contactCard p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--text-secondary);
 }
 
@@ -75,7 +75,7 @@
 
 .btn:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 30px rgba(117, 156, 0, 0.5);
 }
 
 .btnSecondary {
@@ -88,5 +88,5 @@
 .btnSecondary:hover {
   transform: translateY(-5px) scale(1.05);
   background: rgba(255, 255, 255, 0.1);
-  border-color: var(--primary-color);
+  border-color: var(--slimy-green);
 }

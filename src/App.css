@@ -1,0 +1,57 @@
+/* Bento Grid Layout */
+.bento-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: left;
+  margin: 1.5rem 0 1rem 0;
+  padding-left: 0.5rem;
+}
+
+/* Bento Rows */
+.bento-row {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Row 1: Clock (SMALL - 0.8fr) + Soft Skills (3fr - takes rest of space) */
+.row-1 {
+  grid-template-columns: 0.8fr 3fr;
+}
+
+/* Row 2: About Paragraph (3fr - BIGGER) + Technical Skills (2fr) */
+.row-2 {
+  grid-template-columns: 3fr 2fr;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .row-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
