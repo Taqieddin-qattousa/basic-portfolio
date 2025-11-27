@@ -38,7 +38,6 @@ function App() {
           <TechnicalSkills />
         </div>
         {/* Projects Section */}
-        <h2 className="section-title">My Projects</h2>
         <Projects />
         {/* Education Section */}
         <h2 className="section-title">Education</h2>

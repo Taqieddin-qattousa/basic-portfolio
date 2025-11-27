@@ -1,7 +1,7 @@
 .card {
-  background: linear-gradient(135deg, rgba(117, 156, 0, 0.1) 0%, rgba(35, 176, 24, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.1) 0%, rgba(0, 198, 255, 0.05) 100%);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(117, 156, 0, 0.2);
+  border: 2px solid rgba(31, 111, 235, 0.2);
   border-radius: 12px;
   padding: 2rem;
   width: 100%;
@@ -9,9 +9,9 @@
 }
 
 .card:hover {
-  border-color: rgba(117, 156, 0, 0.4);
+  border-color: rgba(31, 111, 235, 0.4);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(117, 156, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(31, 111, 235, 0.2);
 }
 
 .card h3 {
@@ -37,8 +37,8 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1.5rem 1rem;
-  background: rgba(117, 156, 0, 0.1);
-  border: 2px solid rgba(117, 156, 0, 0.2);
+  background: rgba(31, 111, 235, 0.1);
+  border: 2px solid rgba(31, 111, 235, 0.2);
   border-radius: 8px;
   text-decoration: none;
   color: var(--text-color);
@@ -48,8 +48,8 @@
 }
 
 .socialLink:hover {
-  background: rgba(117, 156, 0, 0.2);
-  border-color: var(--slimy-green);
+  background: rgba(31, 111, 235, 0.2);
+  border-color: var(--primary-color);
   transform: translateY(-5px);
 }
 

@@ -1,9 +1,9 @@
 .card {
   max-width: 100%;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(117, 156, 0, 0.1) 0%, rgba(35, 176, 24, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.1) 0%, rgba(0, 198, 255, 0.05) 100%);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(117, 156, 0, 0.2);
+  border: 2px solid rgba(31, 111, 235, 0.2);
   border-radius: 16px;
   padding: 2.5rem;
   box-shadow:
@@ -15,11 +15,11 @@
 
 .card:hover {
   transform: translateY(-8px);
-  border-color: rgba(117, 156, 0, 0.4);
+  border-color: rgba(31, 111, 235, 0.4);
   box-shadow:
-    0 0 0 1px rgba(117, 156, 0, 0.6),
+    0 0 0 1px rgba(31, 111, 235, 0.6),
     0 20px 60px rgba(0, 0, 0, 0.6),
-    0 0 40px rgba(117, 156, 0, 0.3),
+    0 0 40px rgba(31, 111, 235, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
@@ -29,7 +29,7 @@
   gap: 1.5rem;
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid rgba(117, 156, 0, 0.2);
+  border-bottom: 2px solid rgba(31, 111, 235, 0.2);
 }
 
 .icon {
@@ -43,7 +43,7 @@
   border-radius: 12px;
   box-shadow:
     0 0 0 2px rgba(0, 0, 0, 0.8),
-    0 8px 24px rgba(117, 156, 0, 0.4),
+    0 8px 24px rgba(31, 111, 235, 0.4),
     inset 0 2px 6px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease;
 }
@@ -55,7 +55,7 @@
 .info h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--slimy-green) 0%, var(--pakistan-green) 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -86,8 +86,8 @@
   color: var(--text-color);
   font-weight: 600;
   padding: 0.5rem 1rem;
-  background: rgba(117, 156, 0, 0.1);
-  border: 1px solid rgba(117, 156, 0, 0.3);
+  background: rgba(31, 111, 235, 0.1);
+  border: 1px solid rgba(31, 111, 235, 0.3);
   border-radius: 8px;
 }
 
@@ -102,15 +102,15 @@
   font-size: 0.95rem;
   color: var(--text-secondary);
   padding: 0.8rem 1rem;
-  background: rgba(117, 156, 0, 0.05);
-  border-left: 3px solid var(--slimy-green);
+  background: rgba(31, 111, 235, 0.05);
+  border-left: 3px solid var(--primary-color);
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .highlights li:hover {
-  background: rgba(117, 156, 0, 0.1);
-  border-left-color: var(--pakistan-green);
+  background: rgba(31, 111, 235, 0.1);
+  border-left-color: var(--secondary-color);
   transform: translateX(5px);
   color: var(--text-color);
 }

@@ -1,42 +1,41 @@
 /* --- Global Styles & Variables --- */
 :root {
   --bg-color: #0a0a0f;
-  --bg-secondary: #13131a;
-  --text-color: #e4e4e7;
-  --text-secondary: #a1a1aa;
+  --bg-secondary: #161b22;
+  --text-color: #e6edf3;
+  --text-secondary: #8b949e;
 
-  /* New Green/Earth Palette */
-  --dark-green: #6d8c38;
-  --pakistan-green: #23b018;
-  --slimy-green: #759c00;
-  --earth-yellow: #b6a15e;
-  --tigers-eye: #b86c25;
+  /* Core Tech Blue Palette */
+  --deep-blue: #0d1117;
+  --cyber-blue: #1f6feb;
+  --aqua-blue: #58a6ff;
+  --electric-blue: #00c6ff;
+  --sky-blue: #8ed0ff;
 
-  /* Primary colors mapped to new palette */
-  --primary-color: #759c00; /* Slimy green as primary */
-  --primary-hover: #6d8c38; /* Dark green on hover */
-  --secondary-color: #23b018; /* Pakistan green as secondary */
-  --accent-gradient: linear-gradient(135deg, #759c00 0%, #23b018 50%, #6d8c38 100%);
+  /* Primary colors mapped to tech blue palette */
+  --primary-color: #1f6feb; /* main tech blue */
+  --primary-hover: #58a6ff; /* lighter hover */
+  --secondary-color: #00c6ff; /* vibrant accent */
+  --accent-gradient: linear-gradient(135deg, #1f6feb 0%, #00c6ff 50%, #58a6ff 100%);
 
-  /* Updated with green tones */
-  --card-bg: rgba(117, 156, 0, 0.08);
-  --card-border: rgba(117, 156, 0, 0.15);
+  /* Updated with blue tones */
+  --card-bg: rgba(31, 111, 235, 0.06);
+  --card-border: rgba(31, 111, 235, 0.18);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --glow: 0 0 20px rgba(117, 156, 0, 0.3);
+  --glow: 0 0 20px rgba(31, 111, 235, 0.3);
   --font-family: 'Inter', system-ui, sans-serif;
 
-  /* Glass morphism with green tint */
-  --glass-bg: rgba(117, 156, 0, 0.05);
-  --glass-border: rgba(117, 156, 0, 0.12);
+  /* Glass morphism with blue tint */
+  --glass-bg: rgba(31, 111, 235, 0.05);
+  --glass-border: rgba(31, 111, 235, 0.12);
 
   /* Accent colors */
-  --accent-yellow: #b6a15e;
-  --accent-orange: #b86c25;
+  --accent-yellow: #ffd369;
+  --accent-orange: #ff8c32;
 
   /* Gradients */
-  --earth-gradient: linear-gradient(135deg, #6d8c38 0%, #759c00 50%, #23b018 100%);
-  --warm-gradient: linear-gradient(135deg, #b6a15e 0%, #b86c25 100%);
-  --nature-glow: 0 0 20px rgba(35, 176, 24, 0.3);
+  --blue-gradient: linear-gradient(135deg, #1f6feb 0%, #58a6ff 50%, #00c6ff 100%);
+  --cool-glow: 0 0 20px rgba(0, 198, 255, 0.25);
 }
 
 /* Basic Reset */
@@ -47,7 +46,7 @@
 }
 
 html {
-  scroll-behavior: smooth; /* This is what makes the nav links scroll smoothly */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,7 +58,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Animated gradient background */
+/* Optional animated background for futuristic effect */
 body::before {
   content: '';
   position: fixed;
@@ -68,10 +67,10 @@ body::before {
   width: 200%;
   height: 200%;
   background:
-    radial-gradient(circle at 20% 50%, rgba(117, 156, 0, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(35, 176, 24, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(109, 140, 56, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 60% 60%, rgba(182, 161, 94, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(31, 111, 235, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 198, 255, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(88, 166, 255, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, rgba(143, 208, 255, 0.05) 0%, transparent 50%);
   animation: gradientShift 15s ease infinite;
   z-index: -1;
   pointer-events: none;
@@ -96,5 +95,5 @@ body::before {
   padding: 0 20px;
 }
 
-/* We can add a Google Font (like 'Inter') by importing it here */
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');

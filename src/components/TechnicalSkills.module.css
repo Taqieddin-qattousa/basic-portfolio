@@ -1,7 +1,7 @@
 .card {
-  background: linear-gradient(135deg, rgba(117, 156, 0, 0.1) 0%, rgba(35, 176, 24, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(31, 111, 235, 0.1) 0%, rgba(0, 198, 255, 0.05) 100%);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(117, 156, 0, 0.2);
+  border: 2px solid rgba(31, 111, 235, 0.2);
   border-radius: 12px;
   padding: 2rem;
   height: 100%;
@@ -9,9 +9,9 @@
 }
 
 .card:hover {
-  border-color: rgba(117, 156, 0, 0.4);
+  border-color: rgba(31, 111, 235, 0.4);
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(117, 156, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(31, 111, 235, 0.2);
 }
 
 .card h3 {
@@ -51,7 +51,7 @@
 .skillLevel {
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--slimy-green);
+  color: var(--primary-color);
 }
 
 .progressBar {
@@ -68,5 +68,5 @@
   background: var(--accent-gradient);
   border-radius: 4px;
   transition: width 1s ease;
-  box-shadow: 0 0 10px rgba(117, 156, 0, 0.5);
+  box-shadow: 0 0 10px rgba(31, 111, 235, 0.5);
 }
